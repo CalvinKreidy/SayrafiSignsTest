@@ -248,7 +248,7 @@ input {
     border-radius: 10px;
     background-color: #2B65DA;
     color: white;
-    font-size: 15px;
+    font-size: 18px;
     letter-spacing: 2px;
     font-weight: bold;
     margin-top: 25%;
@@ -259,4 +259,12 @@ input {
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    width: 100%;
+    margin-top: 20%;
+    margin-bottom: 10%
+}
+
+
+#IllustrationAbstract {
+    width: 65%;
 }
