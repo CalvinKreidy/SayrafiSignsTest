@@ -307,10 +307,10 @@ input {
     display: grid;
     overflow-y: hidden;
     margin: 11% 35px 5% 35px;
-    height: 55vh;
-    grid-template-columns: repeat(1, 35% 35% 35%);
+    height: 100%;
+    grid-template-columns: repeat(2, 35% 35% 35%);
     border-radius: 6px;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 120px 150px 120px;
     row-gap: 3vh;
     column-gap: 3vh;
     border-right: 5px solid  #2B65DA;
