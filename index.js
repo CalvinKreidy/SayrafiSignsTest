@@ -1,3 +1,4 @@
+//Functioning Scroll Bar: Moving Scroll Bar 
 {   let DivisionGallery = document.getElementById("DivisionGallery");
     let ScrollBarIndex = document.getElementById("ScrollBarIndex");
     let DivisionGalleryTotalWidth = DivisionGallery.scrollWidth;
@@ -16,4 +17,8 @@
         let ScrollBarIndexPosition = ScrollBarScrollableWidth * DivisionGallery_LeftScrolledToScrollableWidth_Ratio;
         ScrollBarIndex.style.transform = "translatex(" + ScrollBarIndexPosition + "px)";
     });
+
+    let SecondImage = document.getElementById("SecondImage");
+    DivisionGallery.addEventListener("scroll",() => {SecondImage.scrollIntoView({behavior: "smooth", inline: "start", block: "nearest"})})
+    
 }
