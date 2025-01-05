@@ -1,5 +1,6 @@
-//Functioning Scroll Bar For Gallery: Moving Scroll Bar
     let DivisionGallery = document.getElementById("DivisionGallery");
+    let DivisionGalleryScrolledWidth = DivisionGallery.scrollLeft;
+    DivisionGallery.addEventListener("touchstart", () => {DivisionGalleryScrolledWidth = DivisionGallery.scrollLeft;});
     let ScrollBarIndex = document.getElementById("ScrollBarIndex");
     let DivisionGalleryTotalWidth = DivisionGallery.scrollWidth;
     let DivisionGalleryScreenWidth = DivisionGallery.getBoundingClientRect().width - 5;
@@ -9,6 +10,11 @@
     let ScrollBarIndexSize = ScrollBarIndex.style.width = (ScrollBarHousing * DivisionGallery_VisibleToFull_Ratio) + "px";
     let ScrollBarIndexSizeRaw = ScrollBarIndex.style.width = ScrollBarHousing * DivisionGallery_VisibleToFull_Ratio;
     let ScrollBarScrollableWidth = ScrollBarHousing - ScrollBarIndexSizeRaw;
+    let DivisionGalleryPhotoWidth = document.getElementById("Image1").getBoundingClientRect().width;
+    let VerticalHeight = window.innerHeight;
+    let DivisionGalleryGapWidth = VerticalHeight * 0.03;
+    let DivisionGallerySection = DivisionGalleryGapWidth + DivisionGalleryPhotoWidth;
+
 
     DivisionGallery.addEventListener("scroll", () => {
         let DivisionGalleryScrolledWidth = DivisionGallery.scrollLeft;
@@ -19,21 +25,22 @@
     });
 
 
-//Sectioned Scrolling System
 let x = 1;
 let z = 1;
-let DivisionGalleryScrolledWidth = DivisionGallery.scrollLeft;
 
 {
     DivisionGallery.addEventListener("touchend",() => {
-    let DivisionGalleryScrolledWidthTwin = DivisionGallery.scrollLeft;
-
+        let DivisionGalleryScrolledWidthTwin = DivisionGallery.scrollLeft;
+        let DivisionGallery_ScrolledPositiveWidth_SectionToScrolled = DivisionGalleryScrolledWidthTwin - DivisionGalleryScrolledWidth;
+        let DivisionGallery_PositiveSectionsPassed = Math.ceil(DivisionGallery_ScrolledPositiveWidth_SectionToScrolled / DivisionGallerySection);
+        let DivisionGallery_ScrolledNegativeWidth_SectionToScrolled = DivisionGalleryScrolledWidth - DivisionGalleryScrolledWidthTwin;
+        let DivisionGallery_NegativeSectionsPassed = Math.ceil(DivisionGallery_ScrolledNegativeWidth_SectionToScrolled / DivisionGallerySection);
+        
         if (DivisionGalleryScrolledWidthTwin > DivisionGalleryScrolledWidth) {
-        x += 1;
+        x += DivisionGallery_PositiveSectionsPassed;
         }
     else if (DivisionGalleryScrolledWidthTwin <  DivisionGalleryScrolledWidth) {
-        x -= 1;}
-
+        x -= DivisionGallery_NegativeSectionsPassed;}
     switch (x) {
         
         case 1:
@@ -74,7 +81,7 @@ let DivisionGalleryScrolledWidth = DivisionGallery.scrollLeft;
         default:
             break; 
     }
-    x = z;
-    DivisionGalleryScrolledWidth = DivisionGalleryScrolledWidthTwin;
+        x = z;
+        if (x > 5) {x = 5};
     })
     }
