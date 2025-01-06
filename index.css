@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 body {
     margin: 0px;
     font-family: Montserrat;
     background-color: black;
     border-top: 1px solid grey;
-   overflow: auto;
+    letter-spacing: 1.4px;
 }
-
 
 footer {
     align-self: end;
@@ -19,24 +17,20 @@ footer {
     border-top: 1px solid grey;
 }
 
-
 a {
     text-decoration: none;
     color: white;
     font-size: 2.5vh;
 }
 
-
 .FooterIcon {
     width: 50%;
 }
-
 
 #FooterLogo {
      width: 20%;
      margin-top: 10%;
 }
-
 
 #DivisionSocialsReference {
     display: grid;
@@ -47,7 +41,6 @@ a {
     height: 100%;
 }
 
-
 #GridReference {
     display: grid;
     grid-template-columns:  100%;
@@ -56,12 +49,10 @@ a {
     margin-left: 35px;
 }
 
-
 #DivisionLogo {
     grid-area: 1/1/2/1;
     z-index: 1;
 }
-
 
 #DivisionText {
     grid-area: 2/1/3/1;
@@ -70,23 +61,19 @@ a {
     letter-spacing: 1.5px;
 }
 
-
 .IconsBottom {
     align-self: end;
     margin-bottom: 35%;
 }
 
-
 .FooterText {
     margin-top: 34px;
 }
-
 
 .claim {
     color: white;
     font-size: 13px;
 }
-
 
 #claim {
     background-color: rgb(111, 111, 111);
@@ -97,7 +84,6 @@ a {
      justify-content: center;
 }
 
-
 #GridDesign {
     position: relative;
     width: 100%;
@@ -106,7 +92,6 @@ a {
     grid-template-columns: 60% 40%;
     grid-template-rows: 42% 16% 42%;
 }
-
 
 #BlueBox1 {
     grid-area: 1/1/2/1;
@@ -118,7 +103,6 @@ a {
     align-self: end;
 }
 
-
 #BlueBox2 {
     grid-area: 1/2/2/3;
     background-color: #2B65DA;
@@ -128,7 +112,6 @@ a {
     height: 30%;
     align-self: end;
 }
-
 
 #BlueBox3 {
     border-radius: 0px 7px 7px 0px;
@@ -141,7 +124,6 @@ a {
     height: 40%;
 }
 
-
 #BlueBox4 {
     grid-area: 2/2/3/3;
     opacity: 0.5;
@@ -152,7 +134,6 @@ a {
     width: 100%;
     height: 40%;
 }
-
 
 #BlueBox5 {
     grid-area: 3/1/4/2;
@@ -165,7 +146,6 @@ a {
     margin-top: 18.5px;
 }
 
-
 #BlueBox6 {
     grid-area: 3/2/4/3;
     opacity: 0.5;
@@ -177,14 +157,12 @@ a {
     margin-top: 18.5px;
 }
 
-
 input {
     border-radius: 8px;
     background-color: black;
     color: white;
     height: 30px;
 }
-
 
 #SectionContactUs  {
     height: 115vh;
@@ -195,12 +173,10 @@ input {
     justify-content: center;
 }
 
-
 #DivisionContactUs {
     width: 100%;
     height: 100%;
 }
-
 
 #ContactUs {
     color: #2B65DA;
@@ -212,11 +188,9 @@ input {
     border-bottom: 1px solid #6B6B6B;
 }
 
-
 .InputStandard {
     width: 100%;
 }
-
 
 #InputComplex {
     width: 100%;
@@ -228,11 +202,9 @@ input {
     color: white;
 }
 
-
 .Label {
     color: white;
 }
-
 
 #ContactUsFirstDivision {
     display: grid;
@@ -241,7 +213,6 @@ input {
     height: 70vh;
     margin: 6% 35px 6% 35px;
 }
-
 
 #ButtonSubmit {
     width: 102.5%;
@@ -254,7 +225,6 @@ input {
     margin-top: 25%;
 }
 
-
 #IllustrationAbstractDivision {
     display: flex;
     justify-content: center;
@@ -264,11 +234,9 @@ input {
     margin-bottom: 10%
 }
 
-
 #IllustrationAbstract {
     width: 65%;
 }
-
 
 #SectionSignGallery {
     width: 100%;
@@ -276,25 +244,21 @@ input {
     border-bottom: 1px solid grey;
 }
 
-
 #DivisionSignGallery {
-    margin: 6% 35px 0px 35px;
-    height: 16%;
+    margin: 0% 35px 0px 35px;
 }
 
-
 #DivisionSignGalleryTextSign {
-    margin: 0px;
+    margin: 14% 0px 0px 0px;
     color: #BDBDBD;
     font-size: 5.2vh;
     letter-spacing: 1.4px;
     margin-bottom: 9px;
 }
 
-
 #DivisionSignGalleryTextGallery {
     margin: 0px 0px 0px 0px;
-    padding-bottom: 38px ;
+    padding-bottom: 10%;
     color: #2B65DA;
     font-size: 5.2vh;
     font-weight: bold;
@@ -302,11 +266,10 @@ input {
     border-bottom: 1px solid #6B6B6B;
 }
 
-
 #DivisionGallery {
     display: grid;
     overflow-y: hidden;
-    margin: 11% 35px 5% 35px;
+    margin: 10% 35px 10% 35px;
     height: 100%;
     grid-template-columns: repeat(2, 35% 35% 35%);
     border-radius: 6px;
@@ -316,13 +279,11 @@ input {
     border-right: 5px solid  #2B65DA;
 }
 
-
 .DivisionGalleryImages {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 
 #DivisionGalleryStick1 {
     background-color: #6B6B6B;
@@ -342,29 +303,25 @@ input {
     align-self: center;
 }
 
-
 ::-webkit-scrollbar {
     display: none;
 }
 
-
 #DivisionScrollBar {
-    margin: 0px 35px 4.5% 35px;
-    height: 10vh;
+    margin: 0px 35px 15% 35px;
+    height: 36px;
     display: flex;
     align-items: center;
 }
 
-
 #ScrollBarHousing {
     width: 100%;
-    height: 40%;
+    height: 34px;
     border: 2px solid #6B6B6B;
     border-radius: 100px;
     display: flex;
     align-items: center;
 }
-
 
 #ScrollBarIndex {
     background-color: #2B65DA;
@@ -373,3 +330,174 @@ input {
     margin: 0px 0px 0px 5px;
     border-radius: 600px;
 } 
+
+#Section_TypesOfSigns {
+    width: 100%;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#Division_TypesOfSigns {
+    width: 100%;
+    height: 0px;
+    justify-self: center;
+}
+
+#DivisionTypesOfSignsOne {
+    color: #BDBDBD;
+    font-size: 5.2vh;
+    margin: 14% 0px 9px 0px;
+
+}
+
+#DivisionTypesOfSignsTwo {
+ color: #2B65DA;
+ font-size: 5.2vh;
+ font-weight: bold;
+ margin: 0px 0px 0px 0px;
+ padding-bottom: 10%;
+ border-bottom: 1px solid grey;
+}
+
+#Division_TypesGallery {
+    display: grid;
+    height: 46vh;
+    position: relative;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    justify-content: center;
+}
+
+#ImageType {
+    height: 46vh;
+    border-radius: 10px;
+    justify-self: center;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+}
+
+#VividTypePhoto {
+    width: 100%;
+    height: 20vh;
+    align-self: center;
+    background-color: #2B65DA;
+}
+
+#S2Mother1 {
+    width: 100%;
+    height: 110vh;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+#S2Text1 {
+    color: #BDBDBD;
+    font-size: 5.2vh;
+    margin: 15% 25px 9px 25px;
+    
+}
+
+#S2Text2 {
+    color: #2B65DA;
+    font-size: 5.2vh;
+    font-weight: bold;
+    border-bottom: 1px solid #6B6B6B;
+    margin: 0px 25px 0px 25px;
+    padding-bottom: 10%;
+}
+
+#S2Division1 {
+    height: 45vh;
+    margin: 10% 0px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#S2Image1 {
+    position: absolute;
+    border-radius: 15px;
+    height: 45vh;
+    object-fit: cover;
+    z-index: 2;
+}
+
+#S2SubDivision2_BlueBox {
+    background-color: #2B65DA;
+    width: 100%;
+    height: 25vh;
+    position: absolute;
+    top: 22.5%;
+    z-index: 1;
+}
+
+#S2SubDivision3 {
+    border-radius: 15px;
+    height: 45vh;
+    display: grid;
+    grid-template-columns: 7% 86% 7%;
+    grid-template-rows: 7% 86% 7%;
+    z-index: 3;
+}   
+
+.Dots {
+    background-color: white;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+#Dot1 {
+    grid-area: 1/1/2/2;
+    justify-self: end;
+    align-self: flex-end;
+}
+
+#Dot2 {
+    grid-area: 1/3/2/4;
+    justify-self: start;
+    align-self: flex-end;
+}
+#Dot3 {
+    grid-area: 3/1/4/2;
+    justify-self: end;
+    align-self: flex-start;
+}
+#Dot4 {
+    grid-area: 3/3/4/4;
+}
+
+#S2SubDivision4 {
+    height: 45vh;
+    position: absolute;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 85% 15%;
+    z-index: 4;
+}
+
+#S2Text3 {
+    color: white;
+    justify-self: center;
+    font-size: 10.95vw;
+    grid-area: 2/1/3/2;
+    text-shadow: 2px 1px 0px black;
+    font-weight: bold;
+}
+
+#S2SubSubDivision5 {
+    background-color: rgba(255, 255, 255, 0.45);
+    justify-self: center;
+    width: 80%;
+    height: 15px;
+    display: grid;
+    align-content: center;
+    grid-area: 2/1/3/2;
+    border-radius: 10px;
+}
+
