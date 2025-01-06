@@ -1,3 +1,4 @@
+{
     let DivisionGallery = document.getElementById("DivisionGallery");
     let DivisionGalleryScrolledWidth = DivisionGallery.scrollLeft;
     DivisionGallery.addEventListener("touchstart", () => {DivisionGalleryScrolledWidth = DivisionGallery.scrollLeft;});
@@ -85,3 +86,12 @@ let z = 1;
         if (x > 5) {x = 5};
     })
     }
+}
+
+    let x = 50;
+    let ScreenWidth = window.innerWidth;
+    let Ratio = (x / ScreenWidth) * 100;
+    let ElementWidth = 100 - Ratio;
+    let S2Image1 = document.getElementById("S2Image1").style.width = ElementWidth + "%";
+    let S2SubDivision3 = document.getElementById("S2SubDivision3").style.width = ElementWidth + "%";
+    let S2SubDivision4 = document.getElementById("S2SubDivision4").style.width = ElementWidth + "%";
