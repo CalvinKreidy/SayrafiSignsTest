@@ -117,6 +117,7 @@ let z = 1;
 
 {
 //Declaration And Initialization of Variables.
+    let body = document.getelementbyid("body");
     let x = 1;
     let boxtext2 = document.getElementById("boxtext2");
     let S2HiddenText1 = document.getElementsByClassName("S2HiddenText1")[0];
@@ -164,9 +165,9 @@ let z = 1;
         x = 1;
     })
 
-    window.addEventListener("scroll", () => {
+    body.addEventListener("scroll", () => {
         if (x == 1) {
-         window.addEventListener("scroll",() => {
+         body.addEventListener("scroll",() => {
             S2SubDivision4.id = "S2SubDivision4";
         S2SubSubDivision1.id = "S2SubSubDivision1";
         S2Text3.id = "S2Text3";
