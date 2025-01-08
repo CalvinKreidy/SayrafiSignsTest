@@ -88,6 +88,7 @@ let z = 1;
     }
 }
 
+{
     let x = 50;
     let ScreenWidth = window.innerWidth;
     let Ratio = (x / ScreenWidth) * 100;
@@ -95,3 +96,70 @@ let z = 1;
     let S2Image1 = document.getElementById("S2Image1").style.width = ElementWidth + "%";
     let S2SubDivision3 = document.getElementById("S2SubDivision3").style.width = ElementWidth + "%";
     let S2SubDivision4 = document.getElementById("S2SubDivision4").style.width = ElementWidth + "%";
+
+    let WidthOfPhotoToDot_BothEnds = 0.14;
+    let ScreenWidthSpecial = ScreenWidth * WidthOfPhotoToDot_BothEnds;
+    let Margin = ScreenWidthSpecial + 40;
+    let spcr = ScreenWidth - Margin;
+    document.getElementById("S2SubDivision5").style.width = spcr + "px";
+    document.getElementById("S2SubDivision6").style.width = spcr + "px";
+
+    let WidthOfTypes = document.getElementById("S2SubDivision5").getBoundingClientRect().width;
+    let WidthSpecial = 14.75;
+    let WidthSpecial2 = 32.5;
+    let WidthSpecial3 = 22.5;
+    document.getElementById("S2SubDivision6").style.gridTemplateColumns = WidthSpecial + "% " + 70.5 +  "% " + WidthSpecial + "%";
+    document.getElementById("S2SubDivision6").style.gridTemplateRows = WidthSpecial2 + "% " + 45 +  "% " + WidthSpecial3 + "%";
+
+    let HeightOfMother = document.getElementById("S2Mother1").getBoundingClientRect().height;
+    document.getElementById("S2BlackCurtain1").style.height = HeightOfMother + "px";
+}
+
+{
+//Declaration And Initialization of Variables.
+    let boxtext2 = document.getElementById("boxtext2");
+    let S2HiddenText1 = document.getElementsByClassName("S2HiddenText1")[0];
+    let S2HiddenImage1 = document.getElementsByClassName("S2HiddenImage1")[0];
+    let S2BlackCurtain1 = document.getElementById("S2BlackCurtain1");
+    let S2SubDivision4 = document.getElementById("S2SubDivision4");
+    let S2SubSubDivision1 = document.getElementById("S2SubSubDivision1");
+    let S2Text3 = document.getElementById("S2Text3");
+//Extracting Secondary Elements From Appearing on Landing page.
+    boxtext2.style.display = "none";
+    S2HiddenText1.style.display = "none";
+    S2HiddenImage1.style.display = "none";
+    S2BlackCurtain1.style.display = "none";
+    S2SubDivision4.classList.remove("S2SubDivision4");
+    S2SubSubDivision1.classList.remove("S2SubSubDivision1");
+    S2Text3.classList.remove("S2Text3");
+
+    S2BlackCurtain1.addEventListener("touch", () => {
+        S2SubDivision4.id = "S2SubDivision4";
+        S2SubSubDivision1.id = "S2SubSubDivision1";
+        S2Text3.id = "S2Text3";
+
+        boxtext2.style.display = "none";
+        S2HiddenText1.style.display = "none";
+        S2HiddenImage1.style.display = "none";
+        S2BlackCurtain1.style.display = "none";
+        S2SubDivision4.classList.remove("S2SubDivision4");
+        S2SubSubDivision1.classList.remove("S2SubSubDivision1");
+        S2Text3.classList.remove("S2Text3");
+    })
+
+    S2SubDivision4.addEventListener("touchend", () => {
+        S2SubDivision4.id = "";
+        S2SubSubDivision1.id = "";
+        S2Text3.id = "";
+
+        boxtext2.style.display = "block";
+        S2HiddenText1.style.display = "inline";
+        S2HiddenImage1.style.display = "inline";
+        S2BlackCurtain1.style.display = "block";
+        S2SubDivision4.classList.add("S2SubDivision4");
+        S2SubSubDivision1.classList.add("S2SubSubDivision1");
+        S2Text3.classList.add("S2Text3");
+    })
+}
+
+
