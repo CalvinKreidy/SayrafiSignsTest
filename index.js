@@ -117,6 +117,7 @@ let z = 1;
 
 {
 //Declaration And Initialization of Variables.
+    let x = 1;
     let boxtext2 = document.getElementById("boxtext2");
     let S2HiddenText1 = document.getElementsByClassName("S2HiddenText1")[0];
     let S2HiddenImage1 = document.getElementsByClassName("S2HiddenImage1")[0];
@@ -145,7 +146,7 @@ let z = 1;
         S2SubDivision4.classList.remove("S2SubDivision4");
         S2SubSubDivision1.classList.remove("S2SubSubDivision1");
         S2Text3.classList.remove("S2Text3");
-        let x = 0;
+        x = 0;
     })
 
     S2SubDivision4.addEventListener("click", () => {
@@ -160,7 +161,7 @@ let z = 1;
         S2SubDivision4.classList.add("S2SubDivision4");
         S2SubSubDivision1.classList.add("S2SubSubDivision1");
         S2Text3.classList.add("S2Text3");
-        let x = 1;
+        x = 1;
     })
 
     window.addEventListener("scroll", () => {
