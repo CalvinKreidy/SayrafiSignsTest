@@ -199,7 +199,7 @@ setTimeout(() => {
         S2SubDivision4.classList.remove("S2SubDivision4");
         S2SubSubDivision1.classList.remove("S2SubSubDivision1");
         S2Text3.classList.remove("S2Text3");
-}, 150);
+}, 80);
         
     })
 
