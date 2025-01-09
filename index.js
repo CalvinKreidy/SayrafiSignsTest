@@ -185,11 +185,12 @@ let z = 1;
     })
 
     S2HiddenImage1.addEventListener("click", (event) => {
+        
+        event.stopPropagation();
+setTimeout(() => {
         S2SubDivision4.id = "S2SubDivision4";
         S2SubSubDivision1.id = "S2SubSubDivision1";
         S2Text3.id = "S2Text3";
-        event.stopPropagation();
-
         boxtext2.style.display = "none";
         S2HiddenText1.style.display = "none";
         S2HiddenImage1.style.display = "none";
@@ -197,6 +198,8 @@ let z = 1;
         S2SubDivision4.classList.remove("S2SubDivision4");
         S2SubSubDivision1.classList.remove("S2SubSubDivision1");
         S2Text3.classList.remove("S2Text3");
+}, 150);
+        
     })
 
     let windowsheightsize = window.innerHeight;
