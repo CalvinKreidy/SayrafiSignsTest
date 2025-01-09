@@ -304,10 +304,6 @@ input {
     align-self: center;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 #DivisionScrollBar {
     margin: 0px 35px 15% 35px;
     height: 36px;
@@ -429,16 +425,19 @@ input {
 }
 
 #S2SubDivision2_BlueBox {
-    width: 97.4%;
+    width: 100%;
     height: 45vh;
     align-self: end;
     position: absolute;
+    display: flex;
+    align-items: center;
     z-index: 1;
 }
 
 #BlueBox {
-    height: 45vh;
+    height: 18vh;
     width: 100%;
+    border-radius: 10px;
     opacity: 1;
 }
 
@@ -517,16 +516,43 @@ input {
     justify-items: center;
     margin-bottom: 15%;
 }
+/*Behind Side*/
+.S2Division2 {
+    display: grid;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    margin-bottom: 15%;
+    z-index: 11;
+}
 
 #S2SubDivision5 {
     background-color: rgba(244, 244, 244, 0.15);
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
     height: 22vh;
     z-index: 5;
     display: grid;
-    position: relative;
+    row-gap: 15px;
+    position: absolute;
+    overflow-x: hidden;
     grid-template-columns: 3% 23.5% 23.5% 23.5% 23.5% 3%;
-    grid-template-rows: 7% 46.5% 46.5%;
+    grid-template-rows: 43% 43% 43%;
+    align-items: center;
+    justify-items: center;
+}
+
+/*Behind Side*/
+.S2SubDivision5 {
+    background-color: rgba(244, 244, 244, 0.15);
+    border-radius: 0px 0px 10px 10px;
+    height: 22vh;
+    z-index: 5;
+    display: grid;
+    row-gap: 15px;
+    position: relative;
+    overflow-x: hidden;
+    grid-template-columns: 3% 23.5% 23.5% 23.5% 23.5% 3%;
+    grid-template-rows: 43% 43% 43%;
     align-items: center;
     justify-items: center;
 }
@@ -538,96 +564,221 @@ input {
     z-index: 6;
 }
 
-#S2Image2 {
+#S2SubSubDivision7 {
+    grid-area: 1/2/2/3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#S2SubSubDivision7:hover {
+    background-color: rgb(255, 255, 255, 0.15);
+}
+
+#S2SubSubDivision8 {
+    grid-area: 1/3/2/4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#S2SubSubDivision8:hover {
+    background-color: rgb(255, 255, 255, 0.15);
+}
+
+#S2SubSubDivision9 {
+    grid-area: 1/4/2/5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#S2SubSubDivision9:hover {
+    background-color: rgb(255, 255, 255, 0.15);
+}
+
+#S2SubSubDivision10 {
+    grid-area: 1/5/2/6;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#S2SubSubDivision10:hover {
+    background-color: rgb(255, 255, 255, 0.15);
+}
+
+#S2SubSubDivision11 {
     grid-area: 2/2/3/3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#S2SubSubDivision11:hover {
+    background-color: rgb(255, 255, 255, 0.15);
+}
+
+#S2SubSubDivision12 {
+    grid-area: 2/3/3/4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#S2SubSubDivision12:hover {
+    background-color: rgb(255, 255, 255, 0.15);
+}
+
+#S2SubSubDivision13 {
+    grid-area: 2/4/3/5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#S2SubSubDivision13:hover {
+    background-color: rgb(255, 255, 255, 0.15);
+}
+
+#S2SubSubDivision14 {
+    grid-area: 2/5/3/6;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#S2SubSubDivision14:hover {
+    background-color: rgb(255, 255, 255, 0.15);
+}
+
+#S2SubSubDivision15{
+    grid-area: 3/2/4/3;width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#S2SubSubDivision15:hover {
+    background-color: rgb(255, 255, 255, 0.15);
+}
+
+#S2SubSubDivision16 {
+    grid-area: 3/3/4/4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#S2SubSubDivision16:hover {
+    background-color: rgb(255, 255, 255, 0.15);
+}
+
+#S2SubSubDivision17 {
+    grid-area: 3/4/4/5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#S2SubSubDivision17:hover {
+    background-color: rgb(255, 255, 255, 0.15);
+}
+
+#S2Image2 {
+    border-bottom: 1px solid #2B65DA;
+    box-shadow: 0px 1px 0px white;
 }
 
 #S2Image3 {
-    grid-area: 2/3/3/4;
+    border-bottom: 1px solid #2B65DA;
+    box-shadow: 0px 1px 0px white;
 }
 
 #S2Image4 {
-    grid-area: 2/4/3/5;
+    border-bottom: 1px solid #2B65DA;
+    box-shadow: 0px 1px 0px white;
 }
 
 #S2Image5 {
-    grid-area: 2/5/3/6;
+    border-bottom: 1px solid #2B65DA;
+    box-shadow: 0px 1px 0px white;
 }
 
 #S2Image6 {
-    grid-area: 3/2/4/3;
+    border-bottom: 1px solid #2B65DA;
+    box-shadow: 0px 1px 0px rgb(255, 255, 255, 0.9);
 }
 
 #S2Image7 {
-    grid-area: 3/3/4/4;
+    border-bottom: 1px solid #2B65DA;
+    box-shadow: 0px 1px 0px rgb(255, 255, 255, 0.9);
 }
 
 #S2Image8 {
-    grid-area: 3/4/4/5;
+    border-bottom: 1px solid #2B65DA;
+    box-shadow: 0px 1px 0px rgb(255, 255, 255, 0.9);
 }
 
 #S2Image9 {
-    grid-area: 3/5/4/6;
+    border-bottom: 1px solid #2B65DA;
+    box-shadow: 0px 1px 0px rgb(255, 255, 255, 0.9);
+}
+
+#S2Image10 {
+    border-bottom: 1px solid #2B65DA;
+    box-shadow: 0px 1px 0px rgb(255, 255, 255, 0.8);
+}
+
+#S2Image11 {
+    border-bottom: 1px solid #2B65DA;
+    box-shadow: 0px 1px 0px rgb(255, 255, 255, 0.8);
+}
+
+#S2Image12 {
+    border-bottom: 1px solid #2B65DA;
+    box-shadow: 0px 1px 0px rgb(255, 255, 255, 0.8);
 }
 
 #S2SubSubDivision2 {
     background-color: #767676;
     width: 15px;
     height: 5px;
-    margin-top: 5px;
     z-index: 6;
     border-radius: 3px;
-    grid-area: 1/2/2/6;
 }
-
-#S2SubDivision6 {
-    position: absolute;
-    height: 22vh;
-    z-index: 4;
-    display: grid;
-    border-radius: 10px;
-}
-
-.StickDuo1 {
-    background-color: #484848;
-    height: 1px;
-    width: 100%;
-}
-
-.StickDuo2 {
-    background-color: #484848;
-    width: 1px;
-    height: 100%;
-}
-
-#S2SubSubDivision3 {
-    grid-area: 1/2/2/3;
-    align-self: end;
-}
-
-#S2SubSubDivision4 {
-    grid-area: 3/2/4/3;
-    align-self: start;
-}
-
-#S2SubSubDivision5 {
-    grid-area: 2/1/3/2;
-    justify-self: end;
-}
-
-#S2SubSubDivision6 {
-    grid-area: 2/3/3/4;
-    justify-self: start;
-}
-
-
-
-
-
-
-
-
-
 
 .S2SubDivision4 {
     height: 34vh;
@@ -700,4 +851,13 @@ input {
     height: 100%;
     text-align: justify;
     align-self: flex-start;
+}
+
+#S2SubDivision7 {
+        background-color: rgba(244, 244, 244, 0.15);
+        height: 20px;
+        border-radius: 10px 10px 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
