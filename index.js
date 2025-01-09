@@ -103,7 +103,7 @@ let z = 1;
     let ElementWidth = 100 - Ratio;
     let S2Image1 = document.getElementById("S2Image1").style.width = ElementWidth + "%";
     let S2SubDivision3 = document.getElementById("S2SubDivision3").style.width = ElementWidth + "%";
-    let BlueBox = document.getElementById("S2SubDivision2_BlueBox").style.width = ElementWidth + 2 + "%";
+    let BlueBox = document.getElementById("S2SubDivision2_BlueBox").style.width = ElementWidth + 1.7 + "%";
     let S2SubDivision4 = document.getElementById("S2SubDivision4").style.width = ElementWidth + "%";
 
     let WidthOfPhotoToDot_BothEnds = 0.14;
@@ -111,14 +111,12 @@ let z = 1;
     let Margin = ScreenWidthSpecial + 40;
     let spcr = ScreenWidth - Margin;
     document.getElementById("S2SubDivision5").style.width = spcr + "px";
-    document.getElementById("S2SubDivision6").style.width = spcr + "px";
+    document.getElementById("S2SubDivision7").style.width = spcr + "px";
 
     let WidthOfTypes = document.getElementById("S2SubDivision5").getBoundingClientRect().width;
     let WidthSpecial = 14.75;
     let WidthSpecial2 = 32.5;
     let WidthSpecial3 = 22.5;
-    document.getElementById("S2SubDivision6").style.gridTemplateColumns = WidthSpecial + "% " + 70.5 +  "% " + WidthSpecial + "%";
-    document.getElementById("S2SubDivision6").style.gridTemplateRows = WidthSpecial2 + "% " + 45 +  "% " + WidthSpecial3 + "%";
 
     let HeightOfMother = document.getElementById("S2Mother1").getBoundingClientRect().height;
     document.getElementById("S2BlackCurtain1").style.height = HeightOfMother + "px";
@@ -199,10 +197,18 @@ setTimeout(() => {
         S2SubDivision4.classList.remove("S2SubDivision4");
         S2SubSubDivision1.classList.remove("S2SubSubDivision1");
         S2Text3.classList.remove("S2Text3");
-}, 100);
+}, 250);
         
     })
 
     let windowsheightsize = window.innerHeight;
     S2BlackCurtain1.style.height = windowsheightsize + "px";
+}
+
+{
+    let S2Division2 = document.getElementById("S2Division2");
+    let S2SubDivision5 = document.getElementById("S2SubDivision5");
+    
+    S2Division2.id = "";
+    S2SubDivision5.id = "";
 }
