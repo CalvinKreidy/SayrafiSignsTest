@@ -16,6 +16,15 @@
     let DivisionGalleryGapWidth = VerticalHeight * 0.03;
     let DivisionGallerySection = DivisionGalleryGapWidth + DivisionGalleryPhotoWidth;
 
+    let TouchPoint = 0;
+
+    ScrollBarIndex.addEventListener("touchstart", (event) => {
+            navigator.vibrate(100);
+            ScrollBarIndex.style.backgroundColor = "#6086D4";
+            ScrollBarIndex.addEventListener("touchend", () => {
+                ScrollBarIndex.style.backgroundColor = "#2B65DA";
+            })
+        })
 
     DivisionGallery.addEventListener("scroll", () => {
         let DivisionGalleryScrolledWidth = DivisionGallery.scrollLeft;
@@ -24,7 +33,6 @@
         let ScrollBarIndexPosition = ScrollBarScrollableWidth * DivisionGallery_LeftScrolledToScrollableWidth_Ratio;
         ScrollBarIndex.style.transform = "translatex(" + ScrollBarIndexPosition + "px)";
     });
-
 
 let x = 1;
 let z = 1;
@@ -119,7 +127,7 @@ let z = 1;
 //Declaration And Initialization of Variables.
     let boxtext2 = document.getElementById("boxtext2");
     let S2HiddenText1 = document.getElementsByClassName("S2HiddenText1")[0];
-    let S2HiddenImage1 = document.getElementsByClassName("S2HiddenImage1")[0];
+    let S2HiddenImage1 = document.getElementById("S2HiddenImage1");
     let S2BlackCurtain1 = document.getElementById("S2BlackCurtain1");
     let S2SubDivision4 = document.getElementById("S2SubDivision4");
     let S2SubSubDivision1 = document.getElementById("S2SubSubDivision1");
@@ -160,6 +168,37 @@ let z = 1;
         S2SubDivision4.classList.add("S2SubDivision4");
         S2SubSubDivision1.classList.add("S2SubSubDivision1");
         S2Text3.classList.add("S2Text3");
-        let x = 1;
     })
+
+    window.addEventListener("scroll", () => {
+        S2SubDivision4.id = "S2SubDivision4";
+        S2SubSubDivision1.id = "S2SubSubDivision1";
+        S2Text3.id = "S2Text3";
+
+        boxtext2.style.display = "none";
+        S2HiddenText1.style.display = "none";
+        S2HiddenImage1.style.display = "none";
+        S2BlackCurtain1.style.display = "none";
+        S2SubDivision4.classList.remove("S2SubDivision4");
+        S2SubSubDivision1.classList.remove("S2SubSubDivision1");
+        S2Text3.classList.remove("S2Text3");
+    })
+
+    S2HiddenImage1.addEventListener("click", (event) => {
+        S2SubDivision4.id = "S2SubDivision4";
+        S2SubSubDivision1.id = "S2SubSubDivision1";
+        S2Text3.id = "S2Text3";
+        event.stopPropagation();
+
+        boxtext2.style.display = "none";
+        S2HiddenText1.style.display = "none";
+        S2HiddenImage1.style.display = "none";
+        S2BlackCurtain1.style.display = "none";
+        S2SubDivision4.classList.remove("S2SubDivision4");
+        S2SubSubDivision1.classList.remove("S2SubSubDivision1");
+        S2Text3.classList.remove("S2Text3");
+    })
+
+    let windowsheightsize = window.innerHeight;
+    S2BlackCurtain1.style.height = windowsheightsize + "px";
 }
