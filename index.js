@@ -103,6 +103,7 @@ let z = 1;
     let ElementWidth = 100 - Ratio;
     let S2Image1 = document.getElementById("S2Image1").style.width = ElementWidth + "%";
     let S2SubDivision3 = document.getElementById("S2SubDivision3").style.width = ElementWidth + "%";
+    let BlueBox = document.getElementById("S2SubDivision2_BlueBox").style.width = ElementWidth + 2 + "%";
     let S2SubDivision4 = document.getElementById("S2SubDivision4").style.width = ElementWidth + "%";
 
     let WidthOfPhotoToDot_BothEnds = 0.14;
@@ -198,7 +199,7 @@ setTimeout(() => {
         S2SubDivision4.classList.remove("S2SubDivision4");
         S2SubSubDivision1.classList.remove("S2SubSubDivision1");
         S2Text3.classList.remove("S2Text3");
-}, 100);
+}, 250);
         
     })
 
