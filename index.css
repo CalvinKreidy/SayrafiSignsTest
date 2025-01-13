@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0px;
+    font-family: Montserrat;
+    background-color: black;
+    border-top: 1px solid grey;
+    letter-spacing: 1.4px;
+    overflow-x: hidden;
+}
+
+footer {
+    align-self: end;
+    position: absolute;
+    width: 100%;
+    height: 55vh;
+    background-color: black;
+    border-top: 1px solid grey;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vh;
+}
+
+.FooterIcon {
+    width: 50%;
+}
+
+#FooterLogo {
+     width: 20%;
+     margin-top: 10%;
+}
+
+#DivisionSocialsReference {
+    display: grid;
+    z-index: 1;
+    grid-template-columns:  50% 50%;
+    width: 50%;
+    grid-area: 3/1/4/1;
+    height: 100%;
+}
+
+#GridReference {
+    display: grid;
+    grid-template-columns:  100%;
+    grid-template-rows:  20% 60% 20%;
+    height: 100%;
+    margin-left: 35px;
+}
+
+#DivisionLogo {
+    grid-area: 1/1/2/1;
+    z-index: 1;
+}
+
+#DivisionText {
+    grid-area: 2/1/3/1;
+    align-self: center;
+    z-index: 1;
+    letter-spacing: 1.5px;
+}
+
+.IconsBottom {
+    align-self: end;
+    margin-bottom: 35%;
+}
+
+.FooterText {
+    margin-top: 34px;
+}
+
+.claim {
+    color: white;
+    font-size: 11px;
+}
+
+#claim {
+    background-color: rgb(111, 111, 111);
+    height: 4vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+     justify-content: center;
+}
+
+#GridDesign {
+    position: relative;
+    width: 100%;
+    height: 55vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 42% 16% 42%;
+}
+
+#BlueBox1 {
+    grid-area: 1/1/2/1;
+    background-color: #2B65DA;
+    opacity: 0.5;
+    border-radius: 0px 9px 9px 0px;
+    width: 40%;
+    height: 30%;
+    align-self: end;
+}
+
+#BlueBox2 {
+    grid-area: 1/2/2/3;
+    background-color: #2B65DA;
+    border-radius: 9px 0px 0px 9px;
+    opacity: 0.5;
+    width: 100%;
+    height: 30%;
+    align-self: end;
+}
+
+#BlueBox3 {
+    border-radius: 0px 7px 7px 0px;
+    grid-area: 2/1/3/2;
+    align-self: center;
+    margin-top: 20px;
+    background-color: #2B65DA;
+    opacity: 0.5;
+    width: 40%;
+    height: 40%;
+}
+
+#BlueBox4 {
+    grid-area: 2/2/3/3;
+    opacity: 0.5;
+    border-radius: 7px 0px 0px 7px;
+    align-self: center;
+    margin-top: 20px;
+    background-color: #2B65DA;
+    width: 100%;
+    height: 40%;
+}
+
+#BlueBox5 {
+    grid-area: 3/1/4/2;
+    opacity: 0.5;
+    background-color: #2B65DA;
+    border-radius: 0px 11px 11px 0px;
+    width: 40%;
+    height: 30%;
+    align-self: start;
+    margin-top: 18.5px;
+}
+
+#BlueBox6 {
+    grid-area: 3/2/4/3;
+    opacity: 0.5;
+    background-color: #2B65DA;
+    border-radius: 11px 0px 0px 11px;
+    width: 100%;
+    height: 30%;
+    align-self: start;
+    margin-top: 18.5px;
+}
+
+input {
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    height: 30px;
+}
+
+#SectionContactUs  {
+    height: 115vh;
+    border-top: 1px solid grey;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1 1;
+    justify-content: center;
+}
+
+#DivisionContactUs {
+    width: 100%;
+    height: 100%;
+}
+
+#ContactUs {
+    color: #2B65DA;
+    font-weight: bold;
+    font-size: 5.2vh;
+    margin: 0px;
+    height: 75%;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #6B6B6B;
+}
+
+.InputStandard {
+    width: 100%;
+}
+
+#InputComplex {
+    width: 100%;
+    background-color: black;
+    border-radius: 6px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-bottom: 2px solid rgb(182, 182, 182);
+    border-right: 2px solid rgb(182, 182, 182);
+    color: white;
+}
+
+.Label {
+    color: white;
+}
+
+#ContactUsFirstDivision {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 16% 16% 16% 16% 16%;
+    height: 70vh;
+    margin: 6% 35px 6% 35px;
+}
+
+#ButtonSubmit {
+    width: 102.5%;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #2B65DA;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-top: 25%;
+}
+
+#IllustrationAbstractDivision {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+    margin-top: 20%;
+    margin-bottom: 10%
+}
+
+#IllustrationAbstract {
+    width: 65%;
+}
+
+#SectionSignGallery {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid grey;
+}
+
+#DivisionSignGallery {
+    margin: 0% 35px 0px 35px;
+}
+
+#DivisionSignGalleryTextSign {
+    margin: 14% 0px 0px 0px;
+    color: #BDBDBD;
+    font-size: 5.2vh;
+    letter-spacing: 1.4px;
+    margin-bottom: 9px;
+}
+
+#DivisionSignGalleryTextGallery {
+    margin: 0px 0px 0px 0px;
+    padding-bottom: 10%;
+    color: #2B65DA;
+    font-size: 5.2vh;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    border-bottom: 1px solid #6B6B6B;
+}
+
+#DivisionGallery {
+    display: grid;
+    overflow-y: hidden;
+    margin: 10% 35px 10% 35px;
+    height: 100%;
+    grid-template-columns: repeat(2, 35% 35% 35%);
+    border-radius: 6px;
+    grid-template-rows: 120px 150px 120px;
+    row-gap: 3vh;
+    column-gap: 3vh;
+    border-right: 5px solid  #2B65DA;
+}
+
+.DivisionGalleryImages {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#DivisionGalleryStick1 {
+    background-color: #6B6B6B;
+    width: 11px;
+    height: 2px;
+    border-radius: 4px;
+    justify-self: center;
+    align-self: center;
+}
+
+#DivisionGalleryStick2 {
+    background-color: #6B6B6B;
+    width: 11px;
+    height: 2px;
+    border-radius: 4px;
+    justify-self: center;
+    align-self: center;
+}
+
+#DivisionScrollBar {
+    margin: 0px 35px 15% 35px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+
+#ScrollBarHousing {
+    width: 100%;
+    height: 34px;
+    border: 2px solid #6B6B6B;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#ScrollBarIndex {
+    background-color: #2B65DA;
+    width: 96%;
+    height: 70%;
+    margin: 0px 0px 0px 5px;
+    border-radius: 600px;
+} 
+
+#Section_TypesOfSigns {
+    width: 100%;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#Division_TypesOfSigns {
+    width: 100%;
+    height: 0px;
+    justify-self: center;
+}
+
+#DivisionTypesOfSignsOne {
+    color: #BDBDBD;
+    font-size: 5.2vh;
+    margin: 14% 0px 9px 0px;
+
+}
+
+#DivisionTypesOfSignsTwo {
+ color: #2B65DA;
+ font-size: 5.2vh;
+ font-weight: bold;
+ margin: 0px 0px 0px 0px;
+ padding-bottom: 10%;
+ border-bottom: 1px solid grey;
+}
+
+#Division_TypesGallery {
+    display: grid;
+    height: 46vh;
+    position: relative;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    justify-content: center;
+}
+
+#ImageType {
+    height: 46vh;
+    border-radius: 10px;
+    justify-self: center;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+}
+
+#VividTypePhoto {
+    width: 100%;
+    height: 20vh;
+    align-self: center;
+    background-color: #2B65DA;
+}
+
+
+#S2Mother1 {
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+#S2Text1 {
+    color: #BDBDBD;
+    font-size: 5.2vh;
+    padding: 15% 25px 9px 25px;
+    margin: 0px;
+}
+
+#S2Text2 {
+    color: #2B65DA;
+    font-size: 5.2vh;
+    font-weight: bold;
+    border-bottom: 1px solid #6B6B6B;
+    margin: 0px 25px 0px 25px;
+    padding-bottom: 10%;
+}
+
+#S2Division1 {
+    height: 45vh;
+    padding: 10% 0px;
+    display: grid;
+    justify-items: center;
+    position: relative;
+}
+
+#S2Image1 {
+    position: absolute;
+    border-radius: 15px;
+    height: 45vh;
+    margin: 10% 0px;
+    object-fit: cover;
+    z-index: 2;
+}
+
+#S2SubDivision2_BlueBox {
+    width: 100%;
+    height: 45vh;
+    align-self: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+#BlueBox {
+    height: 18vh;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+#S2SubDivision3 {
+    border-radius: 15px;
+    height: 45vh;
+    display: grid;
+    grid-template-columns: 7% 86% 7%;
+    grid-template-rows: 7% 86% 7%;
+    z-index: 3;
+}   
+
+.Dots {
+    background-color: white;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+#Dot1 {
+    grid-area: 1/1/2/2;
+    justify-self: end;
+    align-self: flex-end;
+}
+
+#Dot2 {
+    grid-area: 1/3/2/4;
+    justify-self: start;
+    align-self: flex-end;
+}
+#Dot3 {
+    grid-area: 3/1/4/2;
+    justify-self: end;
+    align-self: flex-start;
+}
+#Dot4 {
+    grid-area: 3/3/4/4;
+}
+
+#S2SubDivision4 {
+    height: 45vh;
+    margin-top: 10%;
+    position: absolute;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 85% 15%;
+    z-index: 4;
+}
+
+#S2Text3 {
+    color: white;
+    justify-self: center;
+    font-size: 11vw;
+    grid-area: 2/1/3/2;
+    text-shadow: 1.5px 1.5px 0px #000000;
+    font-weight: bold;
+}
+
+#S2SubSubDivision1 {
+    background-color: rgba(244, 244, 244, 0.45);
+    justify-self: center;
+    box-shadow: 1px 1px 0px black;
+    width: 80%;
+    height: 14px;
+    z-index: 7;
+    display: grid;
+    align-content: center;
+    grid-area: 2/1/3/2;
+    border-radius: 10px;
+}
+
+
+
+
+
+/*Behind Side*/
+
+
+
+
+
+
+.S2SubSubDivision7:hover {
+    background-color: rgb(255, 255, 255, 0.15);
+}
+
+
+
+.S2SubDivision4 {
+    height: 34vh;
+    align-self: flex-end;
+    margin-bottom: 10%;
+    position: absolute;
+    border-radius: 15px;
+    display: grid;
+    align-items: end;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    z-index: 4;
+}
+
+.S2Text3 {
+    color: white;
+    font-size: 8vw;
+    justify-self: center;
+    margin-top: 5%;
+    text-shadow: 0px 0px 1px black;
+    font-weight: bold;
+    z-index: 6;
+}
+
+.S2SubSubDivision1 {
+    background-color: rgba(244, 244, 244, 0.45);
+    justify-items: center;
+    align-items: start;
+    z-index: 6;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    border-radius: 10px;
+}
+
+#S2BlackCurtain1 {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 4;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#S2HiddenImage1 {
+    width: 2.5vh;
+    height: 2.5vh;
+    opacity: 0.5;
+    justify-self: center;
+    align-self: center;
+    pointer-events: auto;
+    z-index: 10;
+}
+
+#S2HiddenImage1:hover {
+    padding: 5px;
+    box-shadow: 0px 0px 2px white;
+    border-radius: 50%;
+}
+
+.S2HiddenText1 {
+    color: white;
+    text-shadow: 0px 0px 1px black;
+    font-size: 4vw;
+}
+
+#boxtext2 {
+    width: 80%;
+    height: 100%;
+    text-align: justify;
+    align-self: flex-start;
+}
+
+
+/*#################################################*/
+.S2Division10 {
+    width: 100%;
+    display: grid;
+    height: 32vh;
+    margin-bottom: 15%;
+    justify-items: center;
+    z-index: 11;
+}
+
+.S2SubDivision5 {
+    border-right: 1px solid rgba(244, 244, 244, 0.25);
+    border-left: 1px solid rgba(244, 244, 244, 0.25);
+    border-radius: 0px 0px 0px 0px;
+    height: 32vh;
+    z-index: 5;
+    display: grid;
+    overflow-x: hidden;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 30% 30% 30% 30% 30% 30% 30% 30% 30% 30%;
+    align-items: center;
+    justify-items: center;
+}
+
+.S2SubSubDivision7L2 {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    margin: 0px -10px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #B5B5B5;
+}
+
+.S2SubSubDivision7L2:hover {
+    background-color: rgb(255, 255, 255, 0.09);
+    border-radius: 10px;
+}
+
+.S2Text4 {
+    color: white;
+    font-size: 4.5vw;
+    text-shadow: 1px 1px 0px black;
+    margin-right: 10px;
+}
+
+.S2ImagesL2 {
+    width: 14vw;
+    margin-left: 5px;
+    height: 14vw;
+    object-fit: cover;
+    margin-right: auto;
+    border-radius: 6px;
+    z-index: 6;
+    box-shadow: 0px 1.4px 0px white;
+    border-top: 1px solid #2B65DA;
+}
+
+.S2SubDivision5::-webkit-scrollbar {
+    width: 1px; /* Adjust the scrollbar width */
+  }
+  
+  .S2SubDivision5::-webkit-scrollbar-thumb {
+    background-color: #2B65DA; /* Thumb color */
+    border-radius: 4px;    /* Rounded corners */
+  }
+
+  #DivisionGallery::-webkit-scrollbar {
+    display: none;
+  }
+
