@@ -111,8 +111,6 @@ let z = 1;
     let Margin = ScreenWidthSpecial + 40;
     let spcr = ScreenWidth - Margin;
     document.getElementsByClassName("S2SubDivision5")[0].style.width = spcr + "px";
-    document.getElementsByClassName("S2SubDivision7")[0].style.width = spcr + "px";
-    document.getElementsByClassName("S2SubDivision7")[0].style.width = spcr + "px";
 
 
     let WidthOfTypes = document.getElementsByClassName("S2SubDivision5")[0].getBoundingClientRect().width;
@@ -204,5 +202,445 @@ setTimeout(() => {
     })
 }
 
-let SpecialContainer = document.getElementById("SpecialContainer");
-SpecialContainer.style.borderBottom = "none";
+
+
+{
+    let x = 1;
+    let y = 1;
+    let z = 1;
+    let i = 0;
+    let S2SubDivision5 = document.getElementsByClassName("S2SubDivision5")[0];
+    let S2SubSubDivision7L2 = document.querySelectorAll(".S2SubSubDivision7L2");
+    let S2Image1 = document.getElementById("S2Image1");
+    let S2Text3 = document.getElementById("S2Text3");
+    let S2SubSubDivision1 = document.getElementById("S2SubSubDivision1");
+    let Type1 = document.getElementById("Type1");
+    let Type2 = document.getElementById("Type2");
+    let Type3 = document.getElementById("Type3");
+    let Type4 = document.getElementById("Type4");
+    let Type5 = document.getElementById("Type5");
+    let Type6 = document.getElementById("Type6");
+    let Type7 = document.getElementById("Type7");
+    let Type8 = document.getElementById("Type8");
+    let Type9 = document.getElementById("Type9");
+    let Type10 = document.getElementById("Type10");
+    let Type11 = document.getElementById("Type11");
+    let CounterText = document.getElementById("CounterText");
+    let TypeHeight = Type1.getBoundingClientRect().height;
+    Type11.style.borderBottom = "none";
+    S2SubDivision5.addEventListener("touchstart", () => {
+        y = 0;
+    })
+    S2SubSubDivision7L2.forEach((Elements) => {
+        Elements.addEventListener("click", () => {
+            z = 0;
+        })})
+    setInterval(() => {
+        switch (z) {
+            case 1:
+                S2Image1.src = "./Apple 1.png";
+                S2Text3.textContent = "INTERIOR SIGNS";
+                S2SubSubDivision1.style.width = "77%";
+                Type11.style.backgroundColor = "transparent";
+                Type1.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
+                CounterText.textContent = "1/11";
+                z++
+                break;
+
+                case 2:
+                S2Image1.src = "./NeonLight.jpeg";
+                S2Text3.textContent = "NEON SIGNS";
+                S2SubSubDivision1.style.width = "60%";
+                Type1.style.backgroundColor = "transparent";
+                Type2.style.backgroundColor = 'rgba(244, 244, 244, 0.15)';
+                CounterText.textContent = "2/11";
+                if(y == 1) {
+                    S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+                }
+                z++
+                break;
+
+                case 3:
+                S2Image1.src = "./Apple 1.png";
+                S2Text3.textContent = "LED SCREEN";
+                S2SubSubDivision1.style.width = "62%";
+                Type2.style.backgroundColor = "transparent";
+                Type3.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
+                CounterText.textContent = "3/11";
+                if(y == 1) {
+                    S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+                }
+                z++
+                break;
+
+                case 4:
+                S2Image1.src = "./WayFinding.jpeg";
+                S2Text3.textContent = "WAY FINDING";
+                S2SubSubDivision1.style.width = "65%";
+                Type3.style.backgroundColor = "transparent";
+                Type4.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
+                CounterText.textContent = "4/11";
+                if(y == 1) {
+                    S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+                }
+                z++
+                break;
+
+                case 5:
+                S2Image1.src = "./Apple 1.png";
+                S2Text3.textContent = "DIRECT LIGHT";
+                S2SubSubDivision1.style.width = "66%";
+                Type4.style.backgroundColor = "transparent";
+                Type5.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
+                CounterText.textContent = "5/11";
+                if(y == 1) {
+                    S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+                }
+                z++
+                break;
+
+                case 6:
+                S2Image1.src = "./LightBox.jpg";
+                S2Text3.textContent = "LIGHTBOX";
+                S2SubSubDivision1.style.width = "53%";
+                Type5.style.backgroundColor = "transparent";
+                Type6.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
+                CounterText.textContent = "6/11";
+                if(y == 1) {
+                    S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+                }
+                z++
+                break;
+
+                case 7:
+                S2Image1.src = "./IMG-20250108-WA0036.jpg";
+                S2Text3.textContent = "ALUCOBOND";
+                S2SubSubDivision1.style.width = "63%";
+                Type6.style.backgroundColor = "transparent";
+                Type7.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
+                CounterText.textContent = "7/11";
+                if(y == 1) {
+                    S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+                }
+                z++
+                break;
+
+                case 8:
+                S2Image1.src = "./Alucobond Perforated.jpeg";
+                S2Text3.textContent = "Alu-Perforated";
+                S2SubSubDivision1.style.width = "75%";
+                Type7.style.backgroundColor = "transparent";
+                Type8.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
+                CounterText.textContent = "8/11";
+                if(y == 1) {
+                    S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+                }
+                z++
+                break;
+
+                case 9:
+                S2Image1.src = "./ParkingSignage.jpeg";
+                S2Text3.textContent = "TRAFFIC SIGNAGE";
+                S2SubSubDivision1.style.width = "83%";
+                Type8.style.backgroundColor = "transparent";
+                Type9.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
+                CounterText.textContent = "9/11";
+                if(y == 1) {
+                    S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+                }
+                z++
+                break;
+
+                case 10:
+                S2Image1.src = "./One Way Vision.jpeg";
+                S2Text3.textContent = "ONE WAY VISION";
+                S2SubSubDivision1.style.width = "85%";
+                Type9.style.backgroundColor = "transparent";
+                Type10.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
+                CounterText.textContent = "10/11";
+                if(y == 1) {
+                    S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+                }
+                z++
+                break;
+
+                case 11:
+                S2Image1.src = "./IndirectLight1.jpeg";
+                S2Text3.textContent = "INDIRECT LIGHT";
+                S2SubSubDivision1.style.width = "78%";
+                Type10.style.backgroundColor = "transparent";
+                Type11.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
+                CounterText.textContent = "11/11";
+                if(y == 1) {
+                    S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+                }
+                z++
+                z=1;
+                break;
+        
+            default:
+                break;
+        }
+    }, 2200);
+
+
+    Type1.addEventListener("click", () => {x = 1})
+    Type2.addEventListener("click", () => {x = 2})
+    Type3.addEventListener("click", () => {x = 3})
+    Type4.addEventListener("click", () => {x = 4})
+    Type5.addEventListener("click", () => {x = 5})
+    Type6.addEventListener("click", () => {x = 6})
+    Type7.addEventListener("click", () => {x = 7})
+    Type8.addEventListener("click", () => {x = 8})
+    Type9.addEventListener("click", () => {x = 9})
+    Type10.addEventListener("click", () => {x = 10})
+    Type11.addEventListener("click", () => {x = 11})
+    S2SubDivision5.addEventListener("click", () =>{
+    switch (x) {
+    case 1:
+        S2Image1.src = "./Apple 1.png";
+        S2Text3.textContent = "INTERIOR SIGNS";
+        S2SubSubDivision1.style.width = "77%";
+        Type11.style.backgroundColor = "transparent";
+        Type10.style.backgroundColor = "transparent";
+        Type9.style.backgroundColor = "transparent";
+        Type8.style.backgroundColor = "transparent";
+        Type7.style.backgroundColor = "transparent";
+        Type6.style.backgroundColor = "transparent";
+        Type5.style.backgroundColor = "transparent";
+        Type4.style.backgroundColor = "transparent";
+        Type3.style.backgroundColor = "transparent";
+        Type2.style.backgroundColor = "transparent";
+        Type1.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
+        CounterText.textContent = "1/11";
+        x++
+        break;
+
+        case 2:
+        S2Image1.src = "./NeonLight.jpeg";
+        S2Text3.textContent = "NEON SIGNS";
+        S2SubSubDivision1.style.width = "60%";
+        Type11.style.backgroundColor = "transparent";
+        Type10.style.backgroundColor = "transparent";
+        Type9.style.backgroundColor = "transparent";
+        Type8.style.backgroundColor = "transparent";
+        Type7.style.backgroundColor = "transparent";
+        Type6.style.backgroundColor = "transparent";
+        Type5.style.backgroundColor = "transparent";
+        Type4.style.backgroundColor = "transparent";
+        Type3.style.backgroundColor = "transparent";
+        Type1.style.backgroundColor = "transparent";
+        Type2.style.backgroundColor = 'rgba(244, 244, 244, 0.15)';
+        CounterText.textContent = "2/11";
+        if(y == 1) {
+            S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+        }
+        x++
+        break;
+
+        case 3:
+        S2Image1.src = "./Apple 1.png";
+        S2Text3.textContent = "LED SCREEN";
+        S2SubSubDivision1.style.width = "62%";
+        Type2.style.backgroundColor = "transparent";
+        Type11.style.backgroundColor = "transparent";
+        Type10.style.backgroundColor = "transparent";
+        Type9.style.backgroundColor = "transparent";
+        Type8.style.backgroundColor = "transparent";
+        Type7.style.backgroundColor = "transparent";
+        Type6.style.backgroundColor = "transparent";
+        Type5.style.backgroundColor = "transparent";
+        Type4.style.backgroundColor = "transparent";
+        Type1.style.backgroundColor = "transparent";
+        Type3.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
+        CounterText.textContent = "3/11";
+        if(y == 1) {
+            S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+        }
+        x++
+        break;
+
+        case 4:
+        S2Image1.src = "./WayFinding.jpeg";
+        S2Text3.textContent = "WAY FINDING";
+        S2SubSubDivision1.style.width = "65%";
+        Type2.style.backgroundColor = "transparent";
+        Type11.style.backgroundColor = "transparent";
+        Type10.style.backgroundColor = "transparent";
+        Type9.style.backgroundColor = "transparent";
+        Type8.style.backgroundColor = "transparent";
+        Type7.style.backgroundColor = "transparent";
+        Type6.style.backgroundColor = "transparent";
+        Type5.style.backgroundColor = "transparent";
+        Type1.style.backgroundColor = "transparent";
+        Type3.style.backgroundColor = "transparent";
+        Type4.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
+        CounterText.textContent = "4/11";
+        if(y == 1) {
+            S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+        }
+        x++
+        break;
+
+        case 5:
+        S2Image1.src = "./Apple 1.png";
+        S2Text3.textContent = "DIRECT LIGHT";
+        S2SubSubDivision1.style.width = "66%";
+        Type2.style.backgroundColor = "transparent";
+        Type11.style.backgroundColor = "transparent";
+        Type10.style.backgroundColor = "transparent";
+        Type9.style.backgroundColor = "transparent";
+        Type8.style.backgroundColor = "transparent";
+        Type7.style.backgroundColor = "transparent";
+        Type6.style.backgroundColor = "transparent";
+        Type1.style.backgroundColor = "transparent";
+        Type3.style.backgroundColor = "transparent";
+        Type4.style.backgroundColor = "transparent";
+        Type5.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
+        CounterText.textContent = "5/11";
+        if(y == 1) {
+            S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+        }
+        x++
+        break;
+
+        case 6:
+        S2Image1.src = "./LightBox.jpg";
+        S2Text3.textContent = "LIGHTBOX";
+        S2SubSubDivision1.style.width = "53%";
+        Type2.style.backgroundColor = "transparent";
+        Type11.style.backgroundColor = "transparent";
+        Type10.style.backgroundColor = "transparent";
+        Type9.style.backgroundColor = "transparent";
+        Type8.style.backgroundColor = "transparent";
+        Type7.style.backgroundColor = "transparent";
+        Type1.style.backgroundColor = "transparent";
+        Type3.style.backgroundColor = "transparent";
+        Type4.style.backgroundColor = "transparent";
+        Type5.style.backgroundColor = "transparent";
+        Type6.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
+        CounterText.textContent = "6/11";
+        if(y == 1) {
+            S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+        }
+        x++
+        break;
+
+        case 7:
+        S2Image1.src = "./IMG-20250108-WA0036.jpg";
+        S2Text3.textContent = "ALUCOBOND";
+        S2SubSubDivision1.style.width = "63%";
+        Type2.style.backgroundColor = "transparent";
+        Type11.style.backgroundColor = "transparent";
+        Type10.style.backgroundColor = "transparent";
+        Type9.style.backgroundColor = "transparent";
+        Type8.style.backgroundColor = "transparent";
+        Type1.style.backgroundColor = "transparent";
+        Type3.style.backgroundColor = "transparent";
+        Type4.style.backgroundColor = "transparent";
+        Type5.style.backgroundColor = "transparent";
+        Type6.style.backgroundColor = "transparent";
+        Type7.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
+        CounterText.textContent = "7/11";
+        if(y == 1) {
+            S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+        }
+        x++
+        break;
+
+        case 8:
+        S2Image1.src = "./Alucobond Perforated.jpeg";
+        S2Text3.textContent = "Alu-Perforated";
+        S2SubSubDivision1.style.width = "75%";
+        Type2.style.backgroundColor = "transparent";
+        Type11.style.backgroundColor = "transparent";
+        Type10.style.backgroundColor = "transparent";
+        Type9.style.backgroundColor = "transparent";
+        Type1.style.backgroundColor = "transparent";
+        Type3.style.backgroundColor = "transparent";
+        Type4.style.backgroundColor = "transparent";
+        Type5.style.backgroundColor = "transparent";
+        Type6.style.backgroundColor = "transparent";
+        Type7.style.backgroundColor = "transparent";
+        Type8.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
+        CounterText.textContent = "8/11";
+        if(y == 1) {
+            S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+        }
+        x++
+        break;
+
+        case 9:
+        S2Image1.src = "./ParkingSignage.jpeg";
+        S2Text3.textContent = "TRAFFIC SIGNAGE";
+        S2SubSubDivision1.style.width = "83%";
+        Type2.style.backgroundColor = "transparent";
+        Type11.style.backgroundColor = "transparent";
+        Type10.style.backgroundColor = "transparent";
+        Type1.style.backgroundColor = "transparent";
+        Type3.style.backgroundColor = "transparent";
+        Type4.style.backgroundColor = "transparent";
+        Type5.style.backgroundColor = "transparent";
+        Type6.style.backgroundColor = "transparent";
+        Type7.style.backgroundColor = "transparent";
+        Type8.style.backgroundColor = "transparent";
+        Type9.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
+        CounterText.textContent = "9/11";
+        if(y == 1) {
+            S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+        }
+        x++
+        break;
+
+        case 10:
+        S2Image1.src = "./One Way Vision.jpeg";
+        S2Text3.textContent = "ONE WAY VISION";
+        S2SubSubDivision1.style.width = "85%";
+        Type2.style.backgroundColor = "transparent";
+        Type11.style.backgroundColor = "transparent";
+        Type1.style.backgroundColor = "transparent";
+        Type3.style.backgroundColor = "transparent";
+        Type4.style.backgroundColor = "transparent";
+        Type5.style.backgroundColor = "transparent";
+        Type6.style.backgroundColor = "transparent";
+        Type7.style.backgroundColor = "transparent";
+        Type8.style.backgroundColor = "transparent";
+        Type9.style.backgroundColor = "transparent";
+        Type10.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
+        CounterText.textContent = "10/11";
+        if(y == 1) {
+            S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+        }
+        x++
+        break;
+
+        case 11:
+        S2Image1.src = "./IndirectLight1.jpeg";
+        S2Text3.textContent = "INDIRECT LIGHT";
+        S2SubSubDivision1.style.width = "78%";
+        Type2.style.backgroundColor = "transparent";
+        Type1.style.backgroundColor = "transparent";
+        Type3.style.backgroundColor = "transparent";
+        Type4.style.backgroundColor = "transparent";
+        Type5.style.backgroundColor = "transparent";
+        Type6.style.backgroundColor = "transparent";
+        Type7.style.backgroundColor = "transparent";
+        Type8.style.backgroundColor = "transparent";
+        Type9.style.backgroundColor = "transparent";
+        Type10.style.backgroundColor = "transparent";
+        Type11.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
+        CounterText.textContent = "11/11";
+        if(y == 1) {
+            S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+        }
+        x++
+        x=1;
+        break;
+
+    default:
+        break;
+    }
+})
+}
+
+
