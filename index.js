@@ -264,7 +264,7 @@ setTimeout(() => {
                 break;
 
                 case 3:
-                S2Image1.src = "./Apple 1.png";
+                S2Image1.src = "./LedScreen.jpg";
                 S2Text3.textContent = "LED SCREEN";
                 S2SubSubDivision1.style.width = "62%";
                 Type2.style.backgroundColor = "transparent";
@@ -441,7 +441,7 @@ setTimeout(() => {
         break;
 
         case 3:
-        S2Image1.src = "./Apple 1.png";
+        S2Image1.src = "./LedScreen.jpg";
         S2Text3.textContent = "LED SCREEN";
         S2SubSubDivision1.style.width = "62%";
         Type2.style.backgroundColor = "transparent";
