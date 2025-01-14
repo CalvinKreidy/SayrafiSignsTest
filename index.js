@@ -36,64 +36,6 @@
 
 let x = 1;
 let z = 1;
-
-{
-    DivisionGallery.addEventListener("touchend",() => {
-        let DivisionGalleryScrolledWidthTwin = DivisionGallery.scrollLeft;
-        let DivisionGallery_ScrolledPositiveWidth_SectionToScrolled = DivisionGalleryScrolledWidthTwin - DivisionGalleryScrolledWidth;
-        let DivisionGallery_PositiveSectionsPassed = Math.ceil(DivisionGallery_ScrolledPositiveWidth_SectionToScrolled / DivisionGallerySection);
-        let DivisionGallery_ScrolledNegativeWidth_SectionToScrolled = DivisionGalleryScrolledWidth - DivisionGalleryScrolledWidthTwin;
-        let DivisionGallery_NegativeSectionsPassed = Math.ceil(DivisionGallery_ScrolledNegativeWidth_SectionToScrolled / DivisionGallerySection);
-        
-        if (DivisionGalleryScrolledWidthTwin > DivisionGalleryScrolledWidth) {
-        x += DivisionGallery_PositiveSectionsPassed;
-        }
-    else if (DivisionGalleryScrolledWidthTwin <  DivisionGalleryScrolledWidth) {
-        x -= DivisionGallery_NegativeSectionsPassed;}
-    switch (x) {
-        
-        case 1:
-            let image1 = document.getElementById("Image1");
-            image1.scrollIntoView({behavior: "smooth", inline: "start", block: "nearest"});
-            x = 0;
-            z = 1;
-            break;
-
-        case 2:
-            let image2 = document.getElementById("Image2");
-            image2.scrollIntoView({behavior: "smooth", inline: "start", block: "nearest"});
-            x = 0;
-            z = 2;
-            break;
-
-        case 3:
-            let image3 = document.getElementById("Image3");
-            image3.scrollIntoView({behavior: "smooth", inline: "start", block: "nearest"});
-            x = 0;
-            z = 3;
-            break;
-
-        case 4:
-            let image4 = document.getElementById("Image4");
-            image4.scrollIntoView({behavior: "smooth", inline: "start", block: "nearest"});
-            x = 0;
-            z = 4;
-            break;
-
-        case 5:
-            let image5 = document.getElementById("Image5");
-            image5.scrollIntoView({behavior: "smooth", inline: "start", block: "nearest"});
-            x = 0;
-            z = 5;
-            break;
-    
-        default:
-            break; 
-    }
-        x = z;
-        if (x > 5) {x = 5};
-    })
-    }
 }
 
 {
