@@ -244,6 +244,9 @@ setTimeout(() => {
                 Type11.style.backgroundColor = "transparent";
                 Type1.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
                 CounterText.textContent = "1/11";
+                if(y == 1) {
+                    S2SubDivision5.scrollTo({top: 0, behavior: "smooth"})
+                }
                 z++
                 break;
 
@@ -255,7 +258,7 @@ setTimeout(() => {
                 Type2.style.backgroundColor = 'rgba(244, 244, 244, 0.15)';
                 CounterText.textContent = "2/11";
                 if(y == 1) {
-                    S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+                    S2SubDivision5.scrollTo({top: TypeHeight, behavior: "smooth"})
                 }
                 z++
                 break;
@@ -268,7 +271,7 @@ setTimeout(() => {
                 Type3.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
                 CounterText.textContent = "3/11";
                 if(y == 1) {
-                    S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+                    S2SubDivision5.scrollTo({top: TypeHeight*2, behavior: "smooth"})
                 }
                 z++
                 break;
@@ -281,7 +284,7 @@ setTimeout(() => {
                 Type4.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
                 CounterText.textContent = "4/11";
                 if(y == 1) {
-                    S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+                    S2SubDivision5.scrollTo({top: TypeHeight*3, behavior: "smooth"})
                 }
                 z++
                 break;
@@ -294,7 +297,7 @@ setTimeout(() => {
                 Type5.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
                 CounterText.textContent = "5/11";
                 if(y == 1) {
-                    S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+                    S2SubDivision5.scrollTo({top: TypeHeight*4, behavior: "smooth"})
                 }
                 z++
                 break;
@@ -307,7 +310,7 @@ setTimeout(() => {
                 Type6.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
                 CounterText.textContent = "6/11";
                 if(y == 1) {
-                    S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+                    S2SubDivision5.scrollTo({top: TypeHeight*5, behavior: "smooth"})
                 }
                 z++
                 break;
@@ -320,7 +323,7 @@ setTimeout(() => {
                 Type7.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
                 CounterText.textContent = "7/11";
                 if(y == 1) {
-                    S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+                    S2SubDivision5.scrollTo({top: TypeHeight*6, behavior: "smooth"})
                 }
                 z++
                 break;
@@ -333,7 +336,7 @@ setTimeout(() => {
                 Type8.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
                 CounterText.textContent = "8/11";
                 if(y == 1) {
-                    S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+                    S2SubDivision5.scrollTo({top: TypeHeight*7, behavior: "smooth"})
                 }
                 z++
                 break;
@@ -346,7 +349,7 @@ setTimeout(() => {
                 Type9.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
                 CounterText.textContent = "9/11";
                 if(y == 1) {
-                    S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+                    S2SubDivision5.scrollTo({top: TypeHeight*8, behavior: "smooth"})
                 }
                 z++
                 break;
@@ -359,7 +362,7 @@ setTimeout(() => {
                 Type10.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
                 CounterText.textContent = "10/11";
                 if(y == 1) {
-                    S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+                    S2SubDivision5.scrollTo({top: TypeHeight*8, behavior: "smooth"})
                 }
                 z++
                 break;
@@ -372,7 +375,7 @@ setTimeout(() => {
                 Type11.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
                 CounterText.textContent = "11/11";
                 if(y == 1) {
-                    S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
+                    S2SubDivision5.scrollTo({top: TypeHeight*8, behavior: "smooth"})
                 }
                 z++
                 z=1;
@@ -413,6 +416,7 @@ setTimeout(() => {
         Type2.style.backgroundColor = "transparent";
         Type1.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
         CounterText.textContent = "1/11";
+        S2SubDivision5.scrollTo({top: 0, behavior: "smooth"})
         x++
         break;
 
@@ -432,9 +436,7 @@ setTimeout(() => {
         Type1.style.backgroundColor = "transparent";
         Type2.style.backgroundColor = 'rgba(244, 244, 244, 0.15)';
         CounterText.textContent = "2/11";
-        if(y == 1) {
-            S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
-        }
+        S2SubDivision5.scrollTo({top: TypeHeight, behavior: "smooth"})
         x++
         break;
 
@@ -454,9 +456,7 @@ setTimeout(() => {
         Type1.style.backgroundColor = "transparent";
         Type3.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
         CounterText.textContent = "3/11";
-        if(y == 1) {
-            S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
-        }
+        S2SubDivision5.scrollTo({top: TypeHeight*2, behavior: "smooth"})
         x++
         break;
 
@@ -476,9 +476,7 @@ setTimeout(() => {
         Type3.style.backgroundColor = "transparent";
         Type4.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
         CounterText.textContent = "4/11";
-        if(y == 1) {
-            S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
-        }
+            S2SubDivision5.scrollTo({top: TypeHeight*3, behavior: "smooth"})
         x++
         break;
 
@@ -498,9 +496,7 @@ setTimeout(() => {
         Type4.style.backgroundColor = "transparent";
         Type5.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
         CounterText.textContent = "5/11";
-        if(y == 1) {
-            S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
-        }
+            S2SubDivision5.scrollTo({top: TypeHeight*4, behavior: "smooth"})
         x++
         break;
 
@@ -520,9 +516,7 @@ setTimeout(() => {
         Type5.style.backgroundColor = "transparent";
         Type6.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
         CounterText.textContent = "6/11";
-        if(y == 1) {
-            S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
-        }
+        S2SubDivision5.scrollTo({top: TypeHeight*5, behavior: "smooth"})
         x++
         break;
 
@@ -542,9 +536,7 @@ setTimeout(() => {
         Type6.style.backgroundColor = "transparent";
         Type7.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
         CounterText.textContent = "7/11";
-        if(y == 1) {
-            S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
-        }
+        S2SubDivision5.scrollTo({top: TypeHeight*6, behavior: "smooth"})
         x++
         break;
 
@@ -564,9 +556,7 @@ setTimeout(() => {
         Type7.style.backgroundColor = "transparent";
         Type8.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
         CounterText.textContent = "8/11";
-        if(y == 1) {
-            S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
-        }
+        S2SubDivision5.scrollTo({top: TypeHeight*7, behavior: "smooth"})
         x++
         break;
 
@@ -586,9 +576,7 @@ setTimeout(() => {
         Type8.style.backgroundColor = "transparent";
         Type9.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
         CounterText.textContent = "9/11";
-        if(y == 1) {
-            S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
-        }
+        S2SubDivision5.scrollTo({top: TypeHeight*8, behavior: "smooth"})
         x++
         break;
 
@@ -608,9 +596,7 @@ setTimeout(() => {
         Type9.style.backgroundColor = "transparent";
         Type10.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
         CounterText.textContent = "10/11";
-        if(y == 1) {
-            S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
-        }
+        S2SubDivision5.scrollTo({top: TypeHeight*8, behavior: "smooth"})
         x++
         break;
 
@@ -630,9 +616,7 @@ setTimeout(() => {
         Type10.style.backgroundColor = "transparent";
         Type11.style.backgroundColor = "rgba(244, 244, 244, 0.15)";
         CounterText.textContent = "11/11";
-        if(y == 1) {
-            S2SubDivision5.scrollBy({top: TypeHeight, behavior: "smooth"});
-        }
+        S2SubDivision5.scrollTo({top: TypeHeight*8, behavior: "smooth"})
         x++
         x=1;
         break;
