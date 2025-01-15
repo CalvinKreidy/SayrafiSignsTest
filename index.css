@@ -272,7 +272,7 @@ input {
     overflow-y: hidden;
     margin: 10% 35px 10% 35px;
     height: 100%;
-    grid-template-columns: repeat(12, 120px 120px 120px);
+    grid-template-columns: repeat(12, 140px 140px 140px);
     border-radius: 6px;
     grid-template-rows: auto auto auto;
     row-gap: 2vh;
@@ -282,8 +282,8 @@ input {
 }
 
 .DivisionGalleryImages {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
 }
 
 #DivisionGalleryStick1 {
@@ -710,12 +710,11 @@ input {
 }
 
 .SetKell {
-    width: 120px;
-    height: 150px;
+    height: 180px;
 }
 
 .Phenicia {
-    height: 150px;
+    height: 180px;
 }
 
 .Municipality{
@@ -723,5 +722,33 @@ input {
 }
 
 .Cedre {
-    height: 150px;
+    height: 180px;
+}
+
+.SeventySix{
+    grid-area: 2/5/3/6;
+}
+
+.FortyOne{
+    grid-area: 3/5/4/6;
+}
+
+.TallMany {
+    height: 180px;
+}
+
+.TallPharmacie {
+    height: 180px;
+}
+
+.Thirty {
+    grid-area: 2/26/3/27;
+}
+
+.SixtyThree {
+    grid-area: 1/28/2/29;
+}
+
+.IDK {
+        height: 180px;
 }
